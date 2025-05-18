@@ -1,0 +1,89 @@
+/* Reset базовых отступов и шрифтов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #121212;
+    color: #eee;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+}
+
+.container {
+    background: #1e1e1e;
+    padding: 2rem 3rem;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    color: #bbb;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+h2 {
+    margin-top: 1.8rem;
+    margin-bottom: 1rem;
+    color: #ff8c00;
+    border-bottom: 2px solid #ff8c00;
+    padding-bottom: 0.3rem;
+}
+
+.tool-list {
+    list-style: none;
+    margin-left: 0;
+}
+
+.tool-list li {
+    margin-bottom: 0.6rem;
+}
+
+.tool-list a {
+    color: #81d4fa;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.tool-list a:hover,
+.tool-list a:focus {
+    color: #ffb74d;
+    text-decoration: underline;
+}
+
+hr {
+    margin: 2rem 0;
+    border: none;
+    border-top: 1px solid #333;
+}
+
+/* Для мобильных экранов */
+@media (max-width: 480px) {
+    body {
+        padding: 1rem;
+    }
+    .container {
+        padding: 1.5rem 1.5rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+}
